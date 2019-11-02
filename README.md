@@ -10,7 +10,7 @@
 #### 1. Clone the repo and install dependencies
 ```bash
 git clone 
-cd rates-api
+cd rate-app
 npm i
 ```
 
