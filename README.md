@@ -1,20 +1,26 @@
-## My Personal Microservice Template
+# My Personal Rate App
+ This is a simple application that shows the value of the dollar in the Venezuelan currency. The information is obtained from recognized pages
+	
+## Running Locally
 
-This is a simple microservice template that i recently started
-to use for my node microservices, for me this is the most
-efficient way to build microservices as of now. There's
-still a few amends to be done to this template such as scripts
-to build docker images and such which i've yet to start using;
-in due time i shall add them.
+#### Prerequisites
+* [Git](https://git-scm.com/downloads)
+* [Node JS](https://nodejs.org/en/)
 
-### Dev Dependencies used
-- **Babel**: Used to compile the project, for babel plugins i use `@babel/cli`
-  `@babel/core` `@babel/node` and `@babel/presets-env`
-- **Eslint**: Used to check for mistakes in the source files. I personally use
-  prettier to check for rules so i use `eslint-config-prettier` and
-  `eslint-pluggin-prettier` to help me with this
-- **Jest**: Used for testing purposes
-- **Nodemon**: to run the project as dev used usually with `babel-node`
-- **Prettier**: as a ruleset for the code
-- **Rimraf**: it's just a helper to delete the dist folder when i'm rebuilding
-    the project
+#### 1. Clone the repo and install dependencies
+```bash
+git clone 
+cd rates-api
+npm i
+```
+
+#### 2. Start the server
+To run in production mode where code is transpiled by Babel into a `dist` folder and run directly in `node`:
+```bash
+npm start
+```
+
+To run in development mode where code is run by [babel-node](https://babeljs.io/docs/en/babel-node) via [nodemon](https://nodemon.io) and re-transpiled any time there is a change:
+```bash
+npm run dev
+```
